@@ -22,9 +22,12 @@
     ],
     "extra": {
         "magento-root-dir": "var/src",
-        "deploy-strategy": "copy",
+        "magento-deploystrategy": "copy",
+        "magento-force": true,
         "map": [
-            ["src/", ""]
+            ["app/code/community/Widgento/Core/", "app/code/community/Widgento/Core/"],
+            ["app/etc/modules/Widgento_Core.xml", "app/etc/modules/Widgento_Core.xml"],
+            ["shell/widgento_uninstall.php", "shell/widgento_uninstall.php"]
         ]
     }
 }
