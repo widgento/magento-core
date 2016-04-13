@@ -6,10 +6,12 @@
     <property name="magento_extension" value="Widgento_Core" override="true" />
     <property name="version" value="0.1.0" override="true" />
 
-    <target name="prepare">
+    <target name="clean">
         <echo msg="Removing build directory" />
         <delete dir="${buildsrc}" />
+    </target>
 
+    <target name="prepare">
         <echo msg="Making build directory" />
         <mkdir dir="${buildsrc}" />
     </target>
