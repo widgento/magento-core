@@ -8,8 +8,13 @@
             "name":  "Widgento",
             "email": "info@widgento.com"
         }
-    ], 
+    ],
+    "require-dev": {
+        "phing/phing": "2.*",
+        "widgento/phing-license": "dev-master"
+    },
     "repositories":[
-        {"type": "git", "url": "https://github.com/widgento/magento-core.git"}
-    ] 
+        {"type": "git", "url": "https://github.com/widgento/magento-core.git"},
+        {"type": "git", "url": "https://github.com/widgento/phing-license.git"}
+    ]
 }
