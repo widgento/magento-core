@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Widgento_Core" default="archive">
-    <includepath classpath="vendor/widgento/phing-license/src" />
-    <taskdef name="addlicense" classname="AddLicense" />
+    <autoloader autoloaderpath="vendor/autoload.php" />
 
-    <property name="buildsrc" value="./var/src" override="true" />
-    <property name="licensesrc" value="vendor/widgento/phing-license/license" override="true" />
+    <import file="vendor/widgento/phing-license/build.xml" />
     <property name="magento_extension" value="Widgento_Core" override="true" />
     <property name="version" value="0.1.0" override="true" />
-
-    <autoloader autoloaderpath="vendor/autoload.php" />
 
     <target name="prepare">
         <echo msg="Removing build directory" />
@@ -16,18 +12,6 @@
 
         <echo msg="Making build directory" />
         <mkdir dir="${buildsrc}" />
-
-    </target>
-
-    <target name="license" depends="prepare">
-        <echo msg="Copying files to build directory..." />
-        <copy todir="${buildsrc}">
-            <fileset dir="./src">
-                <include name="**" />
-            </fileset>
-        </copy>
-
-        <addlicense srcpath="${buildsrc}" licensepath="${licensesrc}" module="${phing.project.name}" />
     </target>
 
     <target name="archive" depends="prepare">

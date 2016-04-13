@@ -105,12 +105,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/widgento/phing-license.git",
-                "reference": "c84b32264d4dd7c2d8f09c89380e245599674e58"
+                "reference": "737a812254d48219337cf2881649f25cc22ba469"
             },
             "require-dev": {
-                "phing/phing": "2.*"
+                "phing/phing": "2.*",
+                "phpunit/phpunit": "^4.8"
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Widgento\\PhingLicense\\": "src/"
+                }
+            },
             "license": [
                 "Widgento Modules License"
             ],
@@ -121,7 +127,7 @@
                 }
             ],
             "description": "Library to add copyright info to project files",
-            "time": "2016-04-13 11:35:18"
+            "time": "2016-04-13 12:53:58"
         }
     ],
     "aliases": [],
