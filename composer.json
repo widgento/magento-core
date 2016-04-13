@@ -22,6 +22,9 @@
     ],
     "extra": {
         "magento-root-dir": "var/src",
-        "deploy-strategy": "copy"
+        "deploy-strategy": "copy",
+        "map": [
+            ["src/", ""]
+        ]
     }
 }
