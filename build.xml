@@ -15,14 +15,13 @@
     </target>
 
     <target name="archive" depends="prepare">
-        <echo msg="Archive files into zip" />
-
         <phingcall target="license" />
 
         <tstamp>
             <format property="DATE" pattern="%Y%m%d" locale="en_US" />
         </tstamp>
 
+        <echo msg="Archive files into zip" />
         <zip destfile="./var/${magento_extension}_${version}_${DATE}.zip">
             <fileset dir="${buildsrc}">
                 <include name="" />
