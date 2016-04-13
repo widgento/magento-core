@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <Widgento_Core>
+        <paths>
+            <path>app/code/community/Widgento/Core/</path>
+            <path>app/etc/modules/Widgento_Core.xml</path>
+            <path>shell/widgento_uninstall.php</path>
+        </paths>
+    </Widgento_Core>
+</manifest>

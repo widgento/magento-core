@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Widgento_Core>
+            <active>true</active>
+            <codePool>community</codePool>
+            <self_name>Widgento Core</self_name>
+            <priority>1001</priority>
+            <depends>
+                
+            </depends>
+        </Widgento_Core>
+    </modules>
+</config>
