@@ -19,5 +19,8 @@
     "repositories":[
         {"type": "git", "url": "https://github.com/widgento/magento-core.git"},
         {"type": "git", "url": "https://github.com/widgento/phing-license.git"}
-    ]
+    ],
+    "extra": {
+        "magento-deploystrategy": "copy"
+    }
 }
