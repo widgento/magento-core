@@ -21,6 +21,8 @@
         {"type": "git", "url": "https://github.com/widgento/phing-license.git"}
     ],
     "extra": {
-        "map": {"src/" : ""}
+        "map": [
+            ["src/", ""]
+        ]
     }
 }
