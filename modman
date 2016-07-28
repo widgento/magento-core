@@ -1,0 +1,3 @@
+/src/app/code/community/Widgento/Core/       /app/code/community/Widgento/Core/
+/src/app/etc/modules/Widgento_Core.xml       /app/etc/modules/Widgento_Core.xml
+/src/shell/widgento_uninstall.php            /shell/widgento_uninstall.php
